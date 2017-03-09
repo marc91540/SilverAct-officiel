@@ -1,0 +1,70 @@
+{% extends data.outerLayout %}
+
+{% block main %}
+        <header>
+
+
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" id="home">HOME</a></li>
+                    <li><a href="#" id="miss">MISS</a></li>
+                    <li><a href="#" id="men">MEN</a></li>
+                </ul>
+            </nav>
+
+            <div class="rs">
+                <a href="#"><div id="facebook"></div></a>
+                <a href="#"><div id="googleplus"></div></a>
+                <a href="#"><div id="instagram"></div></a>
+            </div>
+
+            <a href="#" id="onglet"><img src="modules/my-apostrophe-assets/images/ouvrir.png"></a>
+
+        </header>
+
+
+
+        <div id="section1">
+            <div id="la-grande-epicerie">
+                <p>EN AVANT-PREMIÈRE ET EN EXCLUSIVITÉ LE 18 JUILLET À</p>
+                <div id="logo-lagrandeepicerie"></div>
+            </div>
+            <div id="produit-boissons"></div>
+            <div id="slide_inside1">
+                <h2>{{ apos.singleton(data.page, 'textBlock', 'apostrophe-rich-text', {toolbar: [ 'Styles', 'Bold', 'Italic' ]}) }}</h2>
+                <p>Test</p>
+            </div>
+        </div>
+
+        <div id="section2">
+
+            <img id="petale1-nette" src="modules/my-apostrophe-assets/images/petale1.png">
+            <img id="petale3-nette" src="modules/my-apostrophe-assets/images/petale3.png">
+
+            <img id="petale2-flou" src="modules/my-apostrophe-assets/images/petale2.png">
+            <img id="petale4-flou" src="modules/my-apostrophe-assets/images/petale4.png">
+            <img id="petale5-flou" src="modules/my-apostrophe-assets/images/petale5.png">
+            <img id="petale6-flou" src="modules/my-apostrophe-assets/images/petale6.png">
+
+
+            <div id="missdior"></div>
+            <div id="produit-missdior"></div>
+            <div id="slide_inside2">
+                <h2>La fleur à boire !</h2>
+                <p><span class="rose">Ingrédient :</span> Mandarine d’Italie, Gardenia, Galbanum, Bergamote, Sauge Sclarée, Jasmin. Narcisse, Néroli, Rose, Patchouli, Mousse de Chêne, Labdanum Ciste, Santal.</p>
+            </div>
+        </div>
+
+        <div id="section3">
+            <div id="eausauvage"></div>
+            <div id="produit-eausauvage"></div>
+            <div id="slide_inside3">
+                <h2>Une boisson Révolutionaire</h2>
+                <p><span class="vert">Ingrédients :</span> citron, romarin, petit-grain, basilic composé aromatique qui possède une note de jasmin frais. </p>
+            </div>
+            <div id="retour"><a href="#">retour</a></div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+{% endblock %}
